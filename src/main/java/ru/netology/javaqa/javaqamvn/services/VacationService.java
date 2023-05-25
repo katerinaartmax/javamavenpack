@@ -5,7 +5,7 @@ public class VacationService {
         int vacationMonths = 0;
         int money = 0;
 
-        for (int month = 1; month <= 12; month++) {
+        for (int month = 1; month < 12; month++) {
             if (money >= threshold) {
                 vacationMonths++;
                 money -= expenses;
