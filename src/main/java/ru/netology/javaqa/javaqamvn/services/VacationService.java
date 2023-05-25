@@ -8,11 +8,11 @@ public class VacationService {
         for (int month = 1; month < 12; month++) {
             if (money >= threshold) {
                 vacationMonths++;
-                money -= expenses;
-                money -= money / 3; // траты на отдых
+                money = money - expenses;
+                money = money / 3; // траты на отдых
             } else {
-                money += income;
-                money -= expenses;
+                money = money - expenses + income;
+
             }
         }
 
